@@ -16,10 +16,9 @@ public class DiscountStrategy {
             case "New Year": {
                 return new NewYearDiscountService();
             }
-            case "Default event": {
+            default: {
                 return new DefaultDiscountService();
             }
         }
-        return  new DefaultDiscountService();
     }
 }
